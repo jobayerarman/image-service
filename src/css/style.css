@@ -425,6 +425,7 @@ th {
     border: 1px solid #ddd !important;
   }
 }
+/* Flat UI Color */
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -733,7 +734,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.42857143;
   color: #222222;
@@ -838,20 +839,19 @@ hr {
   src: local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-/* latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -3220,12 +3220,65 @@ input[type="button"].btn-block {
   width: 100%;
 }
 footer {
-  height: 100px;
   margin: 10px 0;
   padding: 35px 0;
+  color: #dddddd;
+  background-color: #34495e;
+}
+footer a {
+  color: #c3c3c3;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #c3c3c3;
+}
+footer .nav-link {
+  padding: 0;
+  list-style: none;
+}
+footer .nav-link li {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+footer .nav-link li:not(:last-child) {
+  margin-bottom: 10px;
 }
 footer p {
   padding: 5px 0;
+}
+.social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social ul li {
+  display: inline-block;
+}
+.social ul li:not(:last-child) {
+  margin-right: 10px;
+}
+.social ul a {
+  background-color: #fff;
+  padding: 8px 5px;
+  border-radius: 50%;
+}
+.social ul .fa-facebook {
+  color: #3B5998;
+}
+.social ul .fa-twitter {
+  color: #00ACED;
+}
+.social ul .fa-pinterest-p {
+  color: #CB2027;
+}
+.social ul .fa-google-plus {
+  color: #DD4B39;
+}
+.social ul .fa-youtube-play {
+  color: #BB0000;
+}
+.copyright {
+  padding: 50px 0;
 }
 .fade {
   opacity: 0;
@@ -4026,7 +4079,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 24px 15px;
+  padding: 8px 15px;
   font-size: 1.8rem;
   line-height: 2rem;
   height: 50px;
@@ -5687,7 +5740,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5805,7 +5858,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
