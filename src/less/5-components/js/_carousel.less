@@ -4,6 +4,10 @@
 
 
 // Wrapper for the slide container and indicators
+.main-carousel {
+  padding: 0;
+  margin-bottom: 30px;
+}
 .carousel {
   position: relative;
 }
@@ -107,12 +111,10 @@
 
   // Set gradients for backgrounds
   &.left {
-    #gradient > .horizontal(@start-color: rgba(0,0,0,.5); @end-color: rgba(0,0,0,.0001));
   }
   &.right {
     left: auto;
     right: 0;
-    #gradient > .horizontal(@start-color: rgba(0,0,0,.0001); @end-color: rgba(0,0,0,.5));
   }
 
   // Hover/focus state
@@ -127,8 +129,8 @@
   // Toggles
   .icon-prev,
   .icon-next,
-  .glyphicon-chevron-left,
-  .glyphicon-chevron-right {
+  .fa-chevron-left,
+  .fa-chevron-right {
     position: absolute;
     top: 50%;
     margin-top: -10px;
@@ -136,14 +138,14 @@
     display: inline-block;
   }
   .icon-prev,
-  .glyphicon-chevron-left {
+  .fa-chevron-left {
     left: 50%;
-    margin-left: -10px;
+    margin-left: -25px;
   }
   .icon-next,
-  .glyphicon-chevron-right {
+  .fa-chevron-right {
     right: 50%;
-    margin-right: -10px;
+    margin-right: -25px;
   }
   .icon-prev,
   .icon-next {
@@ -173,7 +175,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -237,8 +239,8 @@
 
   // Scale up the controls a smidge
   .carousel-control {
-    .glyphicon-chevron-left,
-    .glyphicon-chevron-right,
+    .fa-chevron-left,
+    .fa-chevron-right,
     .icon-prev,
     .icon-next {
       width: (@carousel-control-font-size * 1.5);
@@ -246,13 +248,13 @@
       margin-top: (@carousel-control-font-size / -2);
       font-size: (@carousel-control-font-size * 1.5);
     }
-    .glyphicon-chevron-left,
+    .fa-chevron-left,
     .icon-prev {
-      margin-left: (@carousel-control-font-size / -2);
+      margin-left: -25px;
     }
-    .glyphicon-chevron-right,
+    .fa-chevron-right,
     .icon-next {
-      margin-right: (@carousel-control-font-size / -2);
+      margin-right: -25px;
     }
   }
 
@@ -265,6 +267,6 @@
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20px;
+    bottom: 5px;
   }
 }

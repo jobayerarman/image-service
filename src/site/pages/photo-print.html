@@ -1,4 +1,138 @@
 include "head.html"
 include "nav.html"
 
+<div class="container photo-print">
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs nav-justified" role="tablist">
+        <li role="presentation" ><a href="#upload" aria-controls="upload" role="tab" data-toggle="tab"><span>Step 1:</span> Upload Photos</a></li>
+        <li role="presentation" ><a href="#order" aria-controls="order" role="tab" data-toggle="tab"><span>Step 2:</span> Order Setup</a></li>
+        <li role="presentation"><a href="#crop" aria-controls="crop" role="tab" data-toggle="tab"><span>Step 3:</span> Review Crop</a></li>
+        <li role="presentation" class="active"><a href="#summary" aria-controls="summary" role="tab" data-toggle="tab"><span>Step 4:</span> Summary</a></li>
+      </ul> <!-- /Nav tabs -->
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- upload photos -->
+        <div role="tabpanel" class="tab-pane" id="upload">
+          <h3 class="page-title">Choose your photos</h3>
+          <h5 class="page-description"><small><em>Import from almost anywhere</em></small></h5>
+          <hr>
+          <div class="upload-box">
+            <ul class="text-center">
+              <li><a class="hard-drive" href="#"><i class="fa fa-fw fa-3x fa-upload" aria-hidden="true"></i></a></li>
+              <li><a class="facebook" href="#"><i class="fa fa-fw fa-3x fa-facebook-official" aria-hidden="true"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-fw fa-3x fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a class="google" href="#"><i class="fa fa-fw fa-3x fa-google" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- /upload photos -->
+
+        <!-- order setup -->
+        <div role="tabpanel" class="tab-pane" id="order">
+          <h3 class="page-title">Order Setup</h3>
+          <h5 class="page-description"><small><em>Use this mode to order print size, paper type and quantities of ALL photos</em></small></h5>
+          <hr>
+
+          <h6>1. Size &amp; Quantity</h6>
+          <div class="form-group">
+            <label for="size">Size:</label>
+            <select class="form-control" id="size">
+              <option selected disabled>Select Size...</option>
+              <option>4x6</option>
+              <option>5x7</option>
+              <option>8x11</option>
+              <option>11x14</option>
+            </select>
+            <label for="quantity">Quantity:</label>
+            <select class="form-control" id="quantity">
+              <option selected disabled>Select Quantity...</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+
+          <h6>2. Paper Type</h6>
+          <div class="form-group">
+            <select name="paper-type" id="paper" class="form-control">
+              <option selected disabled>Select Paper Type...</option>
+              <option value="">Glossy</option>
+              <option value="">Matte</option>
+              <option value="">Silk</option>
+              <option value="">Deep Matte</option>
+            </select>
+          </div>
+          <h6>3. Border</h6>
+          <div class="form-group">
+            <select name="" id="" class="form-control">
+              <option selected disabled>Select Border...</option>
+              <option value="">Yes</option>
+              <option value="">No</option>
+            </select>
+          </div>
+        </div>
+        <!-- /order setup -->
+
+        <!-- crop review -->
+        <div role="tabpanel" class="tab-pane" id="crop">
+          <h3 class="page-title">Review cropping of your photos <small>(adjust as needed)</small></h3>
+          <h5 class="page-description"><small><em>Depending on the print size your photos may need to be cropped</em></small></h5>
+          <hr>
+        </div>
+        <!-- crop review -->
+
+        <!-- order summary -->
+        <div role="tabpanel" class="tab-pane active" id="summary">
+          <h3 class="page-title">Order summary</h3>
+          <h5 class="page-description"><small><em>Give your order a final review</em></small></h5>
+          <hr>
+
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tr>
+                <th>Size</th>
+                <th>Paper</th>
+                <th>Border</th>
+                <th class="text-right">Price Each</th>
+                <th class="text-right">Quantity</th>
+                <th class="text-right">Total</th>
+              </tr>
+              <tr>
+                <td>4x6</td>
+                <td>Matte</td>
+                <td>No Border</td>
+                <td class="text-right">&#2547; 10</td>
+                <td class="text-right">1</td>
+                <td class="text-right">&#2547; 10</td>
+              </tr>
+              <tr>
+                <td>4x6</td>
+                <td>Glossy</td>
+                <td>No Border</td>
+                <td class="text-right">&#2547; 8</td>
+                <td class="text-right">3</td>
+                <td class="text-right">&#2547; 24</td>
+              </tr>
+              <tr>
+                <td>8x11</td>
+                <td>Matte</td>
+                <td>No Border</td>
+                <td class="text-right">&#2547; 35</td>
+                <td class="text-right">1</td>
+                <td class="text-right">&#2547; 35</td>
+              </tr>
+            </table>
+          </div> <!-- /table-responsive -->
+        </div>
+        <!-- /order summary -->
+
+      </div> <!-- /Tab panes -->
+    </div>
+  </div>
+</div>
+
 include "foot.html"

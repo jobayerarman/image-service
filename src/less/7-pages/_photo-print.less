@@ -1,0 +1,78 @@
+.page-title {
+  margin-bottom: 0;
+}
+.page-description {
+  margin-top: 0;
+}
+
+.upload-box {
+  ul {
+    max-width: 1000px;
+    margin: 80px auto 40px;
+    padding: 0;
+
+    list-style: none;
+    li {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      a {
+        padding: 60px 40px 40px;
+
+        border: 1px solid @gray-lighter;
+      }
+      .hard-drive {
+        color: @green-sea;
+        &:hover,
+        &:active {
+          color: darken(@green-sea, 10%);
+          border-color: lighten(@green-sea, 25%);
+        }
+      }
+      .facebook {
+        color: @facebook;
+        &:hover,
+        &:active {
+          color: darken(@facebook, 10%);
+          border-color: lighten(@facebook, 25%);
+        }
+      }
+      .instagram {
+        color: @instagram;
+        &:hover,
+        &:active {
+          color: darken(@instagram, 10%);
+          border-color: lighten(@instagram, 25%);
+        }
+      }
+      .google {
+        color: @google;
+        &:hover,
+        &:active {
+          color: darken(@google, 10%);
+          border-color: lighten(@google, 25%);
+        }
+      }
+    }
+  }
+}
+
+.photo-print {
+  .form-group {
+    padding-left: 20px;
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+  .form-control {
+    width: 25%;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .table-responsive {
+    padding: 0 30px;
+  }
+}
